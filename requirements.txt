@@ -1,0 +1,7 @@
+ultralytics
+opencv-python
+numpy==2.2.2
+scipy
+shapely
+tqdm
+torch
