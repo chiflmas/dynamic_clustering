@@ -1,5 +1,6 @@
 import cv2
 
+
 def apply_frame_clahe(frame, gridsize=(3, 3)):
     """
     Apply CLAHE (Contrast Limited Adaptive Histogram Equalization) to a frame.
