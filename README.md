@@ -6,7 +6,7 @@ CSR matrices, and Minimum Spanning Trees (MST). It is designed for applications 
 ![demo_gif](https://github.com/chiflmas/dynamic_clustering/blob/main/dynamic_clustering_slow.gif)
 
 ## Features
-- Real-time object detection using YOLOv8.
+- Real-time object detection using YOLOv8 P2.
 - Dynamic clustering based on spatial proximity.
 - Visualization of clusters using Minimum Spanning Trees (MST).
 - Efficient computation using CSR matrices.
