@@ -6,7 +6,11 @@ from tqdm import tqdm
 from utils.video_processing import apply_frame_clahe
 from utils.clustering import group_and_draw_silhouettes
 
-def process_video_with_yolo_tracking(model_path, input_video_path, output_video_path, apply_clahe=False, group_distance=1.6):
+def process_video_with_yolo_tracking(model_path,
+                                     input_video_path,
+                                     output_video_path,
+                                     apply_clahe=False,
+                                     group_distance=1.6):
     """
     Process a video using YOLOv8 for object detection and dynamic clustering.
 
@@ -43,7 +47,9 @@ def process_video_with_yolo_tracking(model_path, input_video_path, output_video_
     previous_points = None
 
     # Process video frames
-    with tqdm(total=frame_count, desc="Processing video", unit="frame") as pbar:
+    with tqdm(total=frame_count,
+              desc="Processing video",
+              unit="frame") as pbar:
         while cap.isOpened():
             ret, frame = cap.read()
             if not ret:
@@ -56,7 +62,16 @@ def process_video_with_yolo_tracking(model_path, input_video_path, output_video_
                 frame = apply_frame_clahe(frame)
 
             # Run YOLOv8 tracking
-            results = model.track(frame, imgsz=1088, iou=0.25, conf=0.35, classes=[0, 1], max_det=700, persist=True, verbose=False, half=True, tracker='botsort.yaml')
+            results = model.track(frame,
+                                  imgsz=1088,
+                                  iou=0.25,
+                                  conf=0.35,
+                                  classes=[0, 1],
+                                  max_det=700,
+                                  persist=True,
+                                  verbose=False,
+                                  half=True,
+                                  tracker='botsort.yaml')
 
             # Extract bounding boxes for pedestrians (class 0)
             class0_boxes = []

@@ -3,7 +3,9 @@ import numpy as np
 from scipy.spatial.distance import pdist, squareform
 from scipy.sparse.csgraph import minimum_spanning_tree
 
-def draw_group_silhouettes(frame, points, component_label):
+def draw_group_silhouettes(frame,
+                           points,
+                           component_label):
     """
     Draw silhouettes and MST for a group of points.
 

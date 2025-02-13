@@ -2,8 +2,13 @@ import numpy as np
 from scipy.spatial.distance import cdist
 from scipy.sparse import csr_matrix
 from scipy.sparse.csgraph import connected_components
-
-def group_and_draw_silhouettes(boxes, max_distance, frame, calculate_contours=False, previous_labels=None, previous_points=None):
+from utils.visualization import draw_group_silhouettes
+def group_and_draw_silhouettes(boxes,
+                               max_distance,
+                               frame,
+                               calculate_contours=False,
+                               previous_labels=None,
+                               previous_points=None):
     """
     Group detected objects and draw silhouettes.
 
