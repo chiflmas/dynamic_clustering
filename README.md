@@ -3,7 +3,7 @@
 This repository implements real-time dynamic clustering of detected objects using YOLOv8 p2,
 CSR matrices, and Minimum Spanning Trees (MST). It is designed for applications like crowd analysis, traffic monitoring, and scene understanding.
 
-
+![demo_gif](https://github.com/chiflmas/dynamic_clustering/dynamic_clustering_slow.gif)
 
 ## Features
 - Real-time object detection using YOLOv8.
