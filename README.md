@@ -14,8 +14,8 @@ CSR matrices, and Minimum Spanning Trees (MST). It is designed for applications 
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/real-time-clustering-yolov8.git
-   cd real-time-clustering-yolov8
+   git clone https://github.com/chiflmas/dynamic_clustering.git
+   cd dynamic_clustering
    ```
 2. Install dependencies
    ```bash
